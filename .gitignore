@@ -1,0 +1,28 @@
+# generated tool output
+build/
+*.jou
+*.log
+.Xil/
+
+# big or regenerable files
+*.mp3
+*.wav
+*.npy
+*.bin
+*.bit
+
+# keep the generated test tones (small, made by ffmpeg, safe to publish)
+!model/tone*.mp3
+!model/vectors/tone*/pcm_48k_mono.bin
+!model/vectors/tone*/pcm_48k_mono.npy
+
+# publish only vectors made from the tones, never from a song
+model/vectors/*
+!model/vectors/hann_q15.mem
+!model/vectors/tone*/
+
+# python / editor
+__pycache__/
+*.pyc
+.venv/
+.vscode/

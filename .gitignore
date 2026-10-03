@@ -1,0 +1,5 @@
+
+# only publish vectors made from the generated test tones
+model/vectors/*
+!model/vectors/hann_q15.mem
+!model/vectors/tone*/
